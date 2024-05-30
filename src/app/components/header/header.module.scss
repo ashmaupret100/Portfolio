@@ -1,0 +1,8 @@
+.title {
+  transition: 1s;
+  display: inline-block;
+  font-size: 24px;
+  &:hover {
+    transform: rotate(360deg);
+  }
+}

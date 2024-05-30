@@ -1,13 +1,16 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import styles from "./header.module.scss";
 
 function Header() {
   return (
     <>
       <div className="flex justify-between mx-6 my-4 ">
-        <div className="">
-          <Link href="/">Ashma</Link>
+        <div>
+          <Link href="/" className={styles.title}>
+            Ashma
+          </Link>
         </div>
         <div className="flex justify-evenly w-1/3 ">
           <Link href="/">About</Link>
