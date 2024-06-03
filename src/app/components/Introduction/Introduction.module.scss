@@ -1,0 +1,19 @@
+.introWrapper {
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  perspective: 1000px;
+}
+.profilePic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  overflow: hidden;
+  &:hover {
+    transform: rotate(-8deg);
+  }
+}
