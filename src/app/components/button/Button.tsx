@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ name, color }) => {
     [styles.whiteButton]: color === "white",
   });
   return (
-    <div>
+    <div className={styles.buttonWrapper}>
       <button className={buttonClass}>{name}</button>
     </div>
   );

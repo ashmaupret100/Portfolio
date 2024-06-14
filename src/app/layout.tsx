@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}font-sans`}>{children}</body>
+      <body className={`${inter.variable}font-sans`}>
+        <div className="global-container">{children}</div>
+      </body>
     </html>
   );
 }

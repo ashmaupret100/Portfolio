@@ -14,15 +14,20 @@ function Introduction() {
           />
         </div>
         <div className={style.intro}>
-          <span>Hi, I'am Ashma.</span>
-          <span>
-            I am afrontend developer based on New Jesey. I am passionate about
+          <span className={style.heading}>Hi, I'am Ashma. </span>
+          <span className={style.paragraph}>
+            I am a frontend developer based on New Jesey. I am passionate about
             turning bold visions into pixel-perfect realities.
           </span>
         </div>
+        <div className={style.btnGroup}>
+          <div className="mr-10">
+            <Button name="Contact me" color="white" />
+          </div>
+
+          <Button name="My Work" color="black" />
+        </div>
       </div>
-      <div>sliders</div>
-      <Button name="Contact me" color="black" />
     </>
   );
 }
