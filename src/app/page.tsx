@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Header from "./components/header/header";
+import Introduction from "./components/Introduction/Introduction";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <div className="bg-yellow-100">Welcome To Ashma's Website</div>
+      <Introduction />
     </main>
   );
 }

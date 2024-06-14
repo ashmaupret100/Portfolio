@@ -1,0 +1,38 @@
+.introWrapper {
+  width: 100%;
+  max-width: 40rem;
+  margin: 10rem 0 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profilePic {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  overflow: hidden;
+  &:hover {
+    transform: rotate(-8deg);
+  }
+}
+.btnGroup {
+  display: flex;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  margin: 2rem 0;
+  font-family: Pphatton, sans-serif;
+}
+.paragraph {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: Pphatton, sans-serif;
+  margin-bottom: 2rem;
+}

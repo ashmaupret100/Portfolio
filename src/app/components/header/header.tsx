@@ -1,24 +1,21 @@
 "use client";
-import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
+import Image from "next/image";
 import styles from "./header.module.scss";
+import image from "../../../../public/1.png";
 
 function Header() {
   return (
     <>
-      <div className="flex justify-between mx-6 my-4 ">
-        <div>
-          <Link href="/" className={styles.title}>
-            Ashma
-          </Link>
-        </div>
-        <div className="flex justify-evenly w-1/3 ">
-          <Link href="/">About</Link>
-          <Link href="/">Project</Link>
-          <Link href="/">Contact</Link>
-        </div>
+      <div>
+        <Image
+          className={styles.image}
+          src={image}
+          alt="Logo"
+          width={150}
+          height={150}
+        />
       </div>
-      <div className="h-px bg-blue-100 shadow mx-6 mb-4"></div>
     </>
   );
 }
